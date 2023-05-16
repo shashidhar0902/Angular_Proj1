@@ -1,0 +1,52 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <form (ngSubmit)="onSubmitType()">
+                <div class="form-group">
+                    <label for="">Property Type</label>
+                    <select class="form-control" name="BHK" (click)="display()" [(ngModel)]="bhk" >
+                        <option *ngFor="let bhk of bhkopted" [disabled]="bhk === 'BHK'" [value]="bhk">{{bhk}}</option>
+                    </select>
+                </div>
+                <button class="form-control bt btn-primary submit">GetType</button>
+            </form>
+        </div>
+        <div class="col-md-4">
+            
+        </div>
+        <div class="col-md-4">
+            <form [formGroup]="rentForm" (ngSubmit)="onSubmitRent()">
+                <div class="form-group">
+                    <label for="">Property Rent</label>
+                    <input class="form-control" type="text" formControlName="formrentVar">
+                </div>
+                <button class="form-control btn btn-primary submit">GetBasedOnRent</button>
+            </form>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class="dark">
+                        <tr>
+                            <th>Id</th>
+                            <th>Type</th>
+                            <th>Rent</th>
+                            <th>Place</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let property of filteredProperties()">
+                            <td>{{property.PROPId}}</td>
+                            <td>{{property.Type}}</td>
+                            <td>{{property.Rent}}</td>
+                            <td>{{property.Place}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
