@@ -1,4 +1,4 @@
-# first folder place separately and run server.js in a seperate terminal to run api. API contains only a single property entity 
+# first api_using_node place separately and run server.js in a seperate terminal to run api. API contains only a single property entity 
 
 # Demo1
 
