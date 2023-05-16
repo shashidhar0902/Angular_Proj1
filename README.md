@@ -1,5 +1,11 @@
-# first api_using_node place separately and run server.js in a seperate terminal to run api. API contains only a single property entity 
+# Step 1:
+## Folder api_using_node creates an API and can be run simply by running server.js in a seperate terminal. API contains only a single property entity for now.
 
+# Step 2:
+## in the parent folder, execute the command in terminal "npm install" which installs all the dependencies needed for the application to run smoothly.
+
+# Step 3:
+## Once the "npm install" is run successfully, exxecute the command "ng serve -o". This will open the aplplication in a new web browser.
 # Demo1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
