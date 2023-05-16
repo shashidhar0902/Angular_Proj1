@@ -1,3 +1,5 @@
+# first folder place separately and run server.js in a seperate terminal to run api. API contains only a single property entity 
+
 # Demo1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
